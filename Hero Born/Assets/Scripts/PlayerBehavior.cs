@@ -20,7 +20,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<CapsuleCollider>();
-        _gameManager = GameObject.Find("Game Manager") .GetComponent<GameBehavior>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameBehavior>();
     }
 
     void Update()
