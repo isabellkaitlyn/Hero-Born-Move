@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
 public class GameBehavior : MonoBehaviour
 {
-    public string labelText = "Collect all 4 items and win your freedom!";
-    public int maxItems = 4;
+    public string labelText = "Collect all items and win your freedom!";
+    public int maxItems = 1;
     public bool showWinScreen = false;
     public bool showLossScreen = false;
     private int _itemsCollected = 0;
@@ -28,7 +27,7 @@ public class GameBehavior : MonoBehaviour
             }
         }
     }
-    private int _playerHP = 10;
+    private int _playerHP = 3;
     public int HP 
     {
         get { return _playerHP; }
